@@ -1,6 +1,7 @@
 package com.example.android.quizapp;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -246,14 +247,71 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void grading(View view) {
-        qustion4();
-        qustion5();
-        qustion6();
-        quetion7();
-        quetion8();
-        quetion9();
+    public void RadioButtonSetErrorColor(int wrongid1, int wrongid2){
+        RadioButton wronga = findViewById(wrongid1);
+        RadioButton wrongb = findViewById(wrongid2);
 
+        if (wronga.isChecked()){
+            wronga.setTextColor(Color.RED);
+            wrongb.setTextColor(Color.BLACK);
+        }
+        else if ( wrongb.isChecked()){
+            wrongb.setTextColor(Color.RED);
+            wronga.setTextColor(Color.BLACK);
+        }
+        else{
+            wronga.setTextColor(Color.BLACK);
+            wrongb.setTextColor(Color.BLACK);
+        }
+    }
+
+    public void RadioButtonResetErrorColor(int wrongid1, int wrongid2){
+        RadioButton wronga = findViewById(wrongid1);
+        RadioButton wrongb = findViewById(wrongid2);
+        wronga.setTextColor(Color.BLACK);
+        wrongb.setTextColor(Color.BLACK);
+
+    }
+
+    public void checkBoxSetErrorColor(int wrongcheckboxid){
+        CheckBox checkboxId = (CheckBox) findViewById(wrongcheckboxid);
+        Boolean checked = checkboxId.isChecked();
+        if (checked){
+            checkboxId.setTextColor(Color.RED);
+        }
+        else{
+            checkboxId.setTextColor(Color.BLACK);
+        }
+
+    }
+
+    public void checkBoxResetErrorColor(int wrongcheckboxid){
+        CheckBox checkboxId = (CheckBox) findViewById(wrongcheckboxid);
+            checkboxId.setTextColor(Color.BLACK);
+    }
+
+    public void EditTextSetErrorColor(int inputid, String answ) {
+        EditText inputText = (EditText) findViewById(inputid);
+        String input = inputText.getText().toString();
+        if (!EditTextMethod(R.id.input_fieldQ8).equals(answ)) {
+            inputText.setHighlightColor(Color.RED);
+        }
+        else{
+            inputText.setTextColor(Color.BLACK);
+        }
+    }
+
+    public void EditTextResetErrorColor(int inputid) {
+        EditText inputText = (EditText) findViewById(inputid);
+            inputText.setTextColor(Color.BLACK);
+    }
+
+
+    public void grading(View view) {
+        qustion4(); qustion5(); qustion6(); quetion7(); quetion8(); quetion9();
+        RadioButtonSetErrorColor(R.id.questiion1A, R.id.questiion1C); RadioButtonSetErrorColor(R.id.questiion2B, R.id.questiion2C); RadioButtonSetErrorColor(R.id.questiion3A, R.id.questiion3B);
+        checkBoxSetErrorColor(R.id.checkboxQ4C); checkBoxSetErrorColor(R.id.checkboxQ5D); checkBoxSetErrorColor(R.id.checkboxQ6A);
+        EditTextSetErrorColor(R.id.input_fieldQ7, "TextView");  EditTextSetErrorColor(R.id.input_fieldQ8, "Editable"); EditTextSetErrorColor(R.id.input_fieldQ8, "findViewById");
         int correctAnsw = correctAnswQ1 + correctAnswQ2 + correctAnswQ3 + correctAnswQ4 + correctAnswQ5 + correctAnswQ6 + correctAnswQ7 + correctAnswQ8 + correctAnswQ9;
         int wrongansw = wronganswQ1 + wronganswQ2 + wronganswQ3 + wronganswQ4 + wronganswQ5 + wronganswQ6 + wronganswQ7 + wronganswQ8 + wronganswQ9;
         String failedQ = failedQ1 + " " + failedQ2 + " " + failedQ3 + " " + failedQ4 + " " + failedQ5 + " " + failedQ6 + " " + failedQ7 + " " + failedQ8 + " " + failedQ9;
@@ -263,22 +321,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void Reset(View view) {
+        RadioButtonResetErrorColor(R.id.questiion1A, R.id.questiion1C); RadioButtonResetErrorColor(R.id.questiion2B, R.id.questiion2C); RadioButtonResetErrorColor(R.id.questiion3A, R.id.questiion3B);
+        checkBoxResetErrorColor(R.id.checkboxQ4C); checkBoxResetErrorColor(R.id.checkboxQ5D); checkBoxResetErrorColor(R.id.checkboxQ6A);
+        EditTextResetErrorColor(R.id.input_fieldQ7);  EditTextResetErrorColor(R.id.input_fieldQ8); EditTextResetErrorColor(R.id.input_fieldQ8);
         RadioButtonResetMethod(view);
-        CheckboxResetMethod(R.id.checkboxQ4A);
-        CheckboxResetMethod(R.id.checkboxQ4B);
-        CheckboxResetMethod(R.id.checkboxQ4C);
-        CheckboxResetMethod(R.id.checkboxQ4D);
-        CheckboxResetMethod(R.id.checkboxQ5A);
-        CheckboxResetMethod(R.id.checkboxQ5B);
-        CheckboxResetMethod(R.id.checkboxQ5C);
-        CheckboxResetMethod(R.id.checkboxQ5D);
-        CheckboxResetMethod(R.id.checkboxQ6A);
-        CheckboxResetMethod(R.id.checkboxQ6B);
-        CheckboxResetMethod(R.id.checkboxQ6C);
-        CheckboxResetMethod(R.id.checkboxQ6D);
-        EditTextResetMethod(R.id.input_fieldQ7);
-        EditTextResetMethod(R.id.input_fieldQ8);
-        EditTextResetMethod(R.id.input_fieldQ9);
+        CheckboxResetMethod(R.id.checkboxQ4A); CheckboxResetMethod(R.id.checkboxQ4B); CheckboxResetMethod(R.id.checkboxQ4C); CheckboxResetMethod(R.id.checkboxQ4D);
+        CheckboxResetMethod(R.id.checkboxQ5A); CheckboxResetMethod(R.id.checkboxQ5B); CheckboxResetMethod(R.id.checkboxQ5C); CheckboxResetMethod(R.id.checkboxQ5D);
+        CheckboxResetMethod(R.id.checkboxQ6A); CheckboxResetMethod(R.id.checkboxQ6B); CheckboxResetMethod(R.id.checkboxQ6C); CheckboxResetMethod(R.id.checkboxQ6D);
+        EditTextResetMethod(R.id.input_fieldQ7); EditTextResetMethod(R.id.input_fieldQ8); EditTextResetMethod(R.id.input_fieldQ9);
+
         TextView reset = (TextView) findViewById(
                 R.id.display);
         String resetTex = "Quiz reset";

@@ -20,7 +20,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:text="Welcome To Android Basic Quiz"
-            android:textSize="24sp" />
+            android:textSize="26sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                 android:onClick="questio1"
                 android:paddingLeft="16dp"
                 android:text="@string/Q1A"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/questiion1B"
@@ -55,7 +55,7 @@
                 android:onClick="questio1"
                 android:paddingLeft="16dp"
                 android:text="@string/Q1B"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
 
             <RadioButton
@@ -66,7 +66,7 @@
                 android:onClick="questio1"
                 android:paddingLeft="16dp"
                 android:text="@string/Q1C"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
         </RadioGroup>
 
         <TextView
@@ -92,7 +92,7 @@
                 android:onClick="questio2"
                 android:paddingLeft="16dp"
                 android:text="@string/Q2A"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/questiion2B"
@@ -102,7 +102,7 @@
                 android:onClick="questio2"
                 android:paddingLeft="16dp"
                 android:text="@string/Q2B"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/questiion2C"
@@ -112,7 +112,7 @@
                 android:onClick="questio2"
                 android:paddingLeft="16dp"
                 android:text="@string/Q2C"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
         </RadioGroup>
 
@@ -139,7 +139,7 @@
                 android:onClick="questio3"
                 android:paddingLeft="16dp"
                 android:text="@string/Q3A"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/questiion3B"
@@ -149,7 +149,7 @@
                 android:onClick="questio3"
                 android:paddingLeft="16dp"
                 android:text="@string/Q3B"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/questiion3C"
@@ -159,7 +159,7 @@
                 android:onClick="questio3"
                 android:paddingLeft="16dp"
                 android:text="@string/Q3C"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
         </RadioGroup>
 
@@ -179,7 +179,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q4A"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ4B"
@@ -188,7 +188,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q4B"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ4C"
@@ -197,7 +197,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q4C"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ4D"
@@ -206,7 +206,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q4D"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -223,7 +223,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q5A"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ5B"
@@ -232,7 +232,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q5B"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ5C"
@@ -241,7 +241,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q5C"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ5D"
@@ -250,7 +250,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q5D"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -267,7 +267,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q6A"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ6B"
@@ -276,7 +276,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q6B"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ6C"
@@ -285,7 +285,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q6C"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <CheckBox
             android:id="@+id/checkboxQ6D"
@@ -294,7 +294,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="16sp"
             android:text="@string/Q6D"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
 
         <TextView
