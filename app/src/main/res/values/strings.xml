@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="question_1">1.  Which of the following is not valid java Method</string>
+    <string name="Q1A">public void  method (int number){}</string>
+    <string name="Q1B">private method (int number){return string;}</string>
+    <string name="Q1C">private int  method (int string){return string;}</string>
+    <string name="question_2">2.  Which of the following is return value of Resource id (R.id) </string>
+    <string name="Q2A">Integer</string>
+    <string name="Q2B">String</string>
+    <string name="Q2C">Boolean</string>
+    <string name="question_3">3.  Which of the following attribute is compulsory for any view </string>
+    <string name="Q3A">text</string>
+    <string name="Q3B">id</string>
+    <string name="Q3C">layout_height</string>
+    <string name="question_4">4.  When calling method on View object Check all true Statements </string>
+    <string name="Q4A">some method has return value</string>
+    <string name="Q4B">some method has no return value</string>
+    <string name="Q4C">All method can be use on all View object</string>
+    <string name="Q4D">All method cannot be use on all View object</string>
+    <string name="question_5">5.  Which of the following are xml Layout</string>
+    <string name="Q5A">LinearLayout</string>
+    <string name="Q5B">RelativeLayout</string>
+    <string name="Q5C">ConstraintLayout</string>
+    <string name="Q5D">HorizontalLayout</string>
+    <string name="question_6">6.  Check all the correct statement that are True for ViewGroup</string>
+    <string name="Q6A">ViewGroup is only inside RelativeLayout containers</string>
+    <string name="Q6B">A ViewGroup extends from view class</string>
+    <string name="Q6C">The ViewGroup a view that contain other views</string>
+    <string name="Q6D">ViewGroup is base class for layout and views containers</string>
+    <string name="question_7">7.  To call setText() Method on object your need to Cast view id to wich View Class object </string>
+    <string name="question_8">8.  What is the return Data type of .getText()</string>
+    <string name="question_9">9.  Which method is used to access a view layout resource in MainActivity.java</string>
+    <string name="details">Press Grade Button to view your score. Caution: reset Button will clear all your answers</string>
+    <string caution=""></string>
+    <string name="Hint">Your Answer</string>
+    <string name="Grade">Grade</string>
+    <string name="Reset">Reset</string>
+
+</resources>
